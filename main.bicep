@@ -121,7 +121,7 @@ resource domainControllerConfiguration 'Microsoft.Compute/virtualMachines/extens
     typeHandlerVersion: '2.77'
     autoUpgradeMinorVersion: true
     settings: {
-      ModulesUrl: 'https://github.com/alangerotaouh/avd/raw/refs/heads/main/Deploy-DomainServices.zip'
+      ModulesUrl: 'https://github.com/it-steuerring/lhrd/blob/main/scripts/Deploy-DomainServices.zip'
       ConfigurationFunction: 'Deploy-DomainServices.ps1\\Deploy-DomainServices'
       Properties: {
         domainFQDN: domainFQDN
