@@ -21,7 +21,7 @@ param natPublicIpName string = 'pip-natgw-prod-01'
 
 // Virtual machine parameters for domain controller
 @description('Name for the domain controller virtual machine.')
-param domainControllerName string = 'vm-dc-prod-01'
+param domainControllerName string = 'vm-dc-prod-02'
 
 // Virtual machine size for the domain controller
 @description('Virtual machine size for the domain controller.')
@@ -44,7 +44,7 @@ param domainFQDN string = 'OUCICW.local' //change domain here. Use simple domain
 param avdHostPoolName string = 'avd-hostpool-prod-01'
 param avdRegistrationExpirationTime string = dateTimeAdd(utcNow(), 'P7D')
 param avdSessionHostPrefix string = 'sh-'
-param avdSessionHostCount int = 1 // Number of AVD session hosts to deploy. Change this value to fit your needs.
+param avdSessionHostCount int = 5 // Number of AVD session hosts to deploy. Change this value to fit your needs.
 param avdSessionHostSize string = 'Standard_D2s_v6'
 param avdSessionHostPublisher string = 'MicrosoftWindowsDesktop'
 param avdSessionHostOffer string = 'office-365' // change to 'windows-11' for a vanilla Windows 11 image with param avdSessionHostSku
